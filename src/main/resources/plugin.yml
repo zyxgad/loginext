@@ -1,0 +1,23 @@
+name: LoginExt
+version: 0.0.4
+api-version: 1.16
+author: zyxgad
+main: com.github.zyxgad.loginext.LoginExt
+database: true
+
+commands:
+  myinfo:
+    description: This command will show yours information
+    usage: 'Player: /<command>'
+    permission: loginext.default
+    permission-message: You don't have <permission>
+  players:
+    description: This command will list all players
+    usage: '/<command>'
+    permission: loginext.default
+    permission-message: You don't have <permission>
+
+
+permissions:
+  loginext.default:
+    default: true
