@@ -4,7 +4,7 @@ package com.github.zyxgad.loginext.util;
 import org.bukkit.ChatColor;
 
 public final class ColorTextBuilder{
-	
+
 	private final StringBuilder builder;
 
 	public ColorTextBuilder(){

@@ -2,9 +2,6 @@
 #Mac os
 .DS_Store
 
-#dangerous
-/src/main/resources/config/*
-
 #librarys
 /lib
 

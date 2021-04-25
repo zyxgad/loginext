@@ -10,7 +10,7 @@ import com.github.zyxgad.loginext.player.Account;
 import com.github.zyxgad.loginext.util.ColorTextBuilder;
 
 
-public class CommandRunner implements CommandExecutor{
+public final class CommandRunner implements CommandExecutor{
   public CommandRunner(){}
 
   @Override
@@ -20,8 +20,8 @@ public class CommandRunner implements CommandExecutor{
       if(sender instanceof Player){
         Account player = Account.getAccountByPlayer((Player)sender);
         sender.sendMessage(new ColorTextBuilder()
-          .add("Yours name is ").green(player.getName()).line()
-          .add("Yours authority is ").blue(player.getLevel().getDis()).line()
+          .add("Your name is ").green(player.getName()).line()
+          .add("Your authority is ").blue(player.getLevel().getDis()).line()
           .toString());
       }
       return true;
@@ -31,7 +31,7 @@ public class CommandRunner implements CommandExecutor{
       ColorTextBuilder builder = new ColorTextBuilder();
       builder.line("Player list:");
       for(Account a: Account.getAllAccounts()){
-        builder.add(a.getName()).line();
+        builder.green(a.getName()).line();
         player_count++;
       }
       builder.add("Player count: ").add(player_count).line();

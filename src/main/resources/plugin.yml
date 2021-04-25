@@ -7,7 +7,7 @@ database: true
 
 commands:
   myinfo:
-    description: This command will show yours information
+    description: This command will show your information
     usage: 'Player: /<command>'
     permission: loginext.default
     permission-message: You don't have <permission>

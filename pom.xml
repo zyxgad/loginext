@@ -5,7 +5,7 @@
 
     <groupId>com.github.zyxgad.loginext</groupId>
     <artifactId>LoginExt</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.1.0</version>
     <packaging>jar</packaging>
     <name>LoginExtMinecraftPlugin</name>
     <description>Parent project for all Spigot modules.</description>
@@ -35,6 +35,15 @@
             <version>1.15.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+
+        <!-- <dependency>
+            <groupId>com.github.zyxgad.kpnmsql</groupId>
+            <artifactId>kpnm-sqlinter</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/sqlinter.jar</systemPath>
+        </dependency> -->
+
     </dependencies>
 
     <properties>
